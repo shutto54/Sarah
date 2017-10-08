@@ -36,12 +36,12 @@
   </url>
   
   <url>
-    <loc>https://example.org/categories/r/</loc>
+    <loc>https://example.org/tags/r/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://example.org/tags/r/</loc>
+    <loc>https://example.org/categories/r/</loc>
     <priority>0</priority>
   </url>
   
