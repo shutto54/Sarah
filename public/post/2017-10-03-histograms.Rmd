@@ -1,0 +1,35 @@
+---
+title: Histograms
+author: Sarah Hutton
+date: 'October 3rd, 2017'
+slug: histograms
+categories:
+  - Mathematics
+  - R
+tags:
+  - R
+  - Histogram
+---
+
+When you have one column of data and want to see how the data is spread out, you would use a histogram. First you load the libraries:
+
+```{r message=FALSE, warning=FALSE}
+library(Lahman)
+library(sqldf)
+library(ggplot2)
+```
+
+
+```{r message=FALSE, warning=FALSE}
+query<-"SELECT weight FROM Master"
+
+result<-sqldf(query)
+
+#visualizing the data
+
+ggplot()+
+  geom_histogram(data=result,aes(x=weight),color="blue",fill="yellow",bins=50)+
+  ggtitle("Body-Weight Distribution for Baseball Players")
+```
+
+The bins is the amount of bars on the graph and the default is 30. The color is the outline of the bars while fill is the inside of the bars.

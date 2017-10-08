@@ -1,0 +1,48 @@
+---
+title: Bar Plot
+author: Sarah Hutton
+date: 'October 3rd, 2017'
+slug: bar-plot
+categories:
+  - R
+  - Mathematics
+tags:
+  - R
+  - Bar Plot
+---
+
+Let's make a vector of class standing for our data science class. First load the libraries:
+
+```{r message=FALSE, warning=FALSE}
+library(Lahman)
+library(sqldf)
+library(devtools)
+library(ggplot2)
+```
+
+
+```{r message=FALSE, warning=FALSE}
+#extracting the data
+
+query<-"SELECT name,HR FROM Teams WHERE yearID=1980
+ORDER BY HR"
+result<-sqldf(query)
+#result is a date frame; headers and columns and rows- like a spreadsheet
+#type result in console after doing ctrl enter
+#to just see column type 'result$name' in console
+result$name<-factor(result$name,levels=result$name)
+#now result$name is permanently considered a factor, and now levels=result$name will order them the way you had them in the columns have x axis as team names 
+
+#visualizing the data
+
+ggplot()+
+  geom_bar(data=result,aes(x=name,y=HR),stat='identity',
+           color='blue',fill='black')+
+  coord_flip()+
+  xlab("Team Name")+
+  ylab("Homeruns")+
+  ggtitle("1980 Team Homerun Distribution")
+#coord_flip() flips the axis
+```
+
+

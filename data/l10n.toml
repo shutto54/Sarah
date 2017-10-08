@@ -1,0 +1,22 @@
+[author]
+    by = "By, Sarah Hutton"
+
+[article]
+    read_more = "Read More"
+    back_to_home = "Home"
+    posted_on = "Posted on"
+    tagged_in = "Tagged in"
+
+[comments]
+    comments = "Comments"
+
+[pagination]
+    newer = "Newer"
+    older = "Older"
+    # Page x of y
+    page = "Page"
+    of = "of"
+
+[page_not_found]
+    title = "404 - page not found"
+    subtitle = "The content you're looking for doesn't seem to exist."

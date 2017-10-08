@@ -1,0 +1,42 @@
+---
+title: Time Series
+author: Sarah Hutton
+date: 'October 3rd, 2017'
+slug: time-series
+categories:
+  - Mathematics
+  - R
+tags:
+  - R
+  - Time Series
+---
+
+The x axis represents time, while the y is variable of your choice. First we load the libraries:
+
+```{r message=FALSE, warning=FALSE}
+library(Lahman)
+library(sqldf)
+library(devtools)
+library(ggplot2)
+```
+
+```{r message=FALSE, warning=FALSE}
+#extracting the data
+
+query<-"SELECT yearID,HR FROM Batting WHERE playerID='ruthba01'"
+
+result<-sqldf(query)
+
+#visualizing the data
+
+ggplot()+
+  geom_point(data=result,aes(x=yearID,y=HR))+
+  geom_line(data=result,aes(x=yearID,y=HR))+
+  ggtitle("Ruth's Homerun Totals Through the Years")+
+  xlab("Year")+
+  ylab("Homeruns")
+
+#if you do not want to see the points, comment out the geom_point line
+#then leave geom_line and then you have yourself a line graph
+```
+
