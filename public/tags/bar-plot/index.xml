@@ -2,21 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bar Plot on Sarah&#39;s Data Science Blog</title>
-    <link>https://https://sarahhuttton54.netlify.com/tags/bar-plot/</link>
+    <link>https://sarahhutton54.netlify.com/tags/bar-plot/</link>
     <description>Recent content in Bar Plot on Sarah&#39;s Data Science Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
+    <lastBuildDate>Tue, 03 Oct 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://https://sarahhuttton54.netlify.com/tags/bar-plot/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://sarahhutton54.netlify.com/tags/bar-plot/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bar Plot</title>
-      <link>https://https://sarahhuttton54.netlify.com/post/bar-plot/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <link>https://sarahhutton54.netlify.com/post/bar-plot/</link>
+      <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://https://sarahhuttton54.netlify.com/post/bar-plot/</guid>
+      <guid>https://sarahhutton54.netlify.com/post/bar-plot/</guid>
       <description>Let’s make a vector of class standing for our data science class. First load the libraries:
 library(Lahman) library(sqldf) library(devtools) library(ggplot2) #extracting the data query&amp;lt;-&amp;quot;SELECT name,HR FROM Teams WHERE yearID=1980 ORDER BY HR&amp;quot; result&amp;lt;-sqldf(query) #result is a date frame; headers and columns and rows- like a spreadsheet #type result in console after doing ctrl enter #to just see column type &amp;#39;result$name&amp;#39; in console result$name&amp;lt;-factor(result$name,levels=result$name) #now result$name is permanently considered a factor, and now levels=result$name will order them the way you had them in the columns have x axis as team names #visualizing the data ggplot()+ geom_bar(data=result,aes(x=name,y=HR),stat=&amp;#39;identity&amp;#39;, color=&amp;#39;blue&amp;#39;,fill=&amp;#39;black&amp;#39;)+ coord_flip()+ xlab(&amp;quot;Team Name&amp;quot;)+ ylab(&amp;quot;Homeruns&amp;quot;)+ ggtitle(&amp;quot;1980 Team Homerun Distribution&amp;quot;) #coord_flip() flips the axis </description>
     </item>
