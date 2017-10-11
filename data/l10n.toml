@@ -7,9 +7,6 @@
     posted_on = "Posted on"
     tagged_in = "Tagged in"
 
-[comments]
-    comments = "Comments"
-
 [pagination]
     newer = "Newer"
     older = "Older"
