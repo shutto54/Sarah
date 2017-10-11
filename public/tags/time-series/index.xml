@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Time Series on Sarah&#39;s Data Science Blog</title>
-    <link>/tags/time-series/</link>
+    <link>https://https://sarahhuttton54.netlify.com/tags/time-series/</link>
     <description>Recent content in Time Series on Sarah&#39;s Data Science Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
     
-	<atom:link href="/tags/time-series/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://https://sarahhuttton54.netlify.com/tags/time-series/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Time Series</title>
-      <link>/post/time-series/</link>
+      <link>https://https://sarahhuttton54.netlify.com/post/time-series/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/time-series/</guid>
+      <guid>https://https://sarahhuttton54.netlify.com/post/time-series/</guid>
       <description>The x axis represents time, while the y is variable of your choice. First we load the libraries:
 library(Lahman) library(sqldf) library(devtools) library(ggplot2) #extracting the data query&amp;lt;-&amp;quot;SELECT yearID,HR FROM Batting WHERE playerID=&amp;#39;ruthba01&amp;#39;&amp;quot; result&amp;lt;-sqldf(query) #visualizing the data ggplot()+ geom_point(data=result,aes(x=yearID,y=HR))+ geom_line(data=result,aes(x=yearID,y=HR))+ ggtitle(&amp;quot;Ruth&amp;#39;s Homerun Totals Through the Years&amp;quot;)+ xlab(&amp;quot;Year&amp;quot;)+ ylab(&amp;quot;Homeruns&amp;quot;) #if you do not want to see the points, comment out the geom_point line #then leave geom_line and then you have yourself a line graph </description>
     </item>
