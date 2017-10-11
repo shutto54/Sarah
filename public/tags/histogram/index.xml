@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Histogram on Sarah&#39;s Data Science Blog</title>
-    <link>https://sarahhutton54.netlify.com/tags/histogram/</link>
+    <link>/tags/histogram/</link>
     <description>Recent content in Histogram on Sarah&#39;s Data Science Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
     
-	<atom:link href="https://sarahhutton54.netlify.com/tags/histogram/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/histogram/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Histograms</title>
-      <link>https://sarahhutton54.netlify.com/post/histograms/</link>
+      <link>/post/histograms/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sarahhutton54.netlify.com/post/histograms/</guid>
+      <guid>/post/histograms/</guid>
       <description>When you have one column of data and want to see how the data is spread out, you would use a histogram. First you load the libraries:
 library(Lahman) library(sqldf) library(ggplot2) query&amp;lt;-&amp;quot;SELECT weight FROM Master&amp;quot; result&amp;lt;-sqldf(query) #visualizing the data ggplot()+ geom_histogram(data=result,aes(x=weight),color=&amp;quot;blue&amp;quot;,fill=&amp;quot;yellow&amp;quot;,bins=50)+ ggtitle(&amp;quot;Body-Weight Distribution for Baseball Players&amp;quot;) The bins is the amount of bars on the graph and the default is 30. The color is the outline of the bars while fill is the inside of the bars.</description>
     </item>
